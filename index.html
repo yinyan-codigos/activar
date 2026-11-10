@@ -327,7 +327,7 @@
     <!-- ==================== VISTA 1: INICIO ==================== -->
     <div id="vistaInicio" class="view-panel active">
       <h2>ACTIVAR ACCESO</h2>
-      <p class="sub-form">Luego de poner enviar email en tu tv o cel, ingresa tu número y presiona obtener código:</p>
+      <p class="sub-form">Luego de poner enviar email en tu tv o cel, ingresa tu número y presiona obtener código.</p>
       
       <input type="tel" id="telefono" placeholder="Coloca tu celular (ej. 987654321)" autocomplete="off" maxlength="20" />
       <button class="btn-action" id="btnConsultar" onclick="ejecutarConsulta()">Obtener Código / Hogar</button>
@@ -512,7 +512,7 @@
       document.getElementById('boxAlertaTv').style.display = paso.alerta ? 'block' : 'none';
 
       var esUltimo = indicePaso === (pasosActuales.length - 1);
-      document.getElementById('btnPasoSiguiente').textContent = esUltimo ? "¡Listo! Obtener mi acceso" : "¡Ya lo hice! Continuar";
+      document.getElementById('btnPasoSiguiente').textContent = esUltimo ? "¡Listo! Obtener Mi Acceso" : "¡Ya lo hice! Continuar";
     }
 
     function avanzarPaso() {
