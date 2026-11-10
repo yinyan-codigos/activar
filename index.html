@@ -66,7 +66,7 @@
       color: #999999;
       padding: 8px 20px;
       border-radius: 24px;
-      font-size: 14px;
+      font-size: 15px;
       font-weight: 700;
       cursor: pointer;
       transition: all 0.25s ease;
@@ -327,7 +327,7 @@
     <!-- ==================== VISTA 1: INICIO ==================== -->
     <div id="vistaInicio" class="view-panel active">
       <h2>ACTIVAR ACCESO</h2>
-      <p class="sub-form">Luego de seguir los pasos en tu dispositivo, ingresa el número de tu celular y presiona obtener código:</p>
+      <p class="sub-form">Luego de poner enviar email en tu tv o cel, ingresa tu número y presiona obtener código:</p>
       
       <input type="tel" id="telefono" placeholder="Coloca tu celular (ej. 987654321)" autocomplete="off" maxlength="20" />
       <button class="btn-action" id="btnConsultar" onclick="ejecutarConsulta()">Obtener Código / Link</button>
@@ -339,7 +339,7 @@
     <!-- ==================== VISTA 2: MENÚ DE DISPOSITIVOS ==================== -->
     <div id="vistaMenuTutorial" class="view-panel">
       <h2>¿EN QUÉ DISPOSITIVO QUIERES VER?</h2>
-      <p class="sub-form">Toca una opción para iniciar la guía paso a paso:</p>
+      <p class="sub-form">Toca una opción para iniciar el tutorial:</p>
 
       <div class="device-grid">
         <div class="dev-card" onclick="iniciarGuia('tv')">
@@ -377,7 +377,7 @@
       <button class="btn-action" id="btnPasoSiguiente" onclick="avanzarPaso()">¡Ya lo hice! Continuar</button>
       
       <div id="boxAlertaTv" class="alerta-box" style="display: none;" onclick="cambiarRutaTvHogar()">
-        ⚠️ ¿No te sale "Estoy de viaje"? Presiona aquí
+        ¿No te sale Estoy de viaje? Presiona aquí
       </div>
 
       <button class="btn-secondary" onclick="irA('tutorial-menu')">Volver al selector</button>
@@ -397,28 +397,28 @@
       {
         indicador: "Paso 1 de 4",
         titulo: 'Pulsa "Esta es mi cuenta"',
-        desc: "En la pantalla de tu televisor, pulsa la opción inferior resaltada.",
+        desc: "Realiza la acción y presiona Ya lo hice.",
         img: "img/estoy-de-viaje-1.jpg",
         alerta: false
       },
       {
         indicador: "Paso 2 de 4",
         titulo: 'Selecciona "Estoy de viaje"',
-        desc: "Elige la opción inferior resaltada.",
+        desc: "Realiza la acción y presiona Ya lo hice.",
         img: "img/estoy-de-viaje-2.jpg",
         alerta: true
       },
       {
         indicador: "Paso 3 de 4",
         titulo: 'Selecciona "Enviar email"',
-        desc: "Selecciona esta opción para enviar el código a la cuenta asociada.",
+        desc: "Realiza la acción y presiona Ya lo hice.",
         img: "img/estoy-de-viaje-3.jpg",
         alerta: false
       },
       {
         indicador: "Paso 4 de 4",
         titulo: 'Coloca el "Código de acceso"',
-        desc: "Deja tu TV en esa pantalla, luego en esta web pulsa el botón ¡Listo!, coloca tu número y obtén tu código de acceso.",
+        desc: "Deja tu TV en esta pantalla, pulsa ¡Listo! mas abajo, coloca tu número y obtén tu código de acceso.",
         img: "img/estoy-de-viaje-4.jpg",
         alerta: false
       }
@@ -429,28 +429,28 @@
       {
         indicador: "Paso 1 de 4 (Cambiar el hogar)",
         titulo: 'Selecciona "Cambiar el hogar"',
-        desc: "Selecciona la opción de cambiar el hogar en el menú de tu pantalla.",
+        desc: "Realiza la acción y presiona Ya lo hice.",
         img: "img/cambiar-el-hogar-1.jpg",
         alerta: false
       },
       {
         indicador: "Paso 2 de 4 (Cambiar el hogar)",
         titulo: 'Pulsa de nuevo "Cambiar el hogar"',
-        desc: "Elige una vez más la opción resaltada para validar.",
+        desc: "Realiza la acción y presiona Ya lo hice.",
         img: "img/cambiar-el-hogar-2.jpg",
         alerta: false
       },
       {
         indicador: "Paso 3 de 4 (Cambiar el hogar)",
         titulo: 'Selecciona "Enviar correo"',
-        desc: "Esto hará que se envie instrucciones a la cuenta principal.",
+        desc: "Realiza la acción y presiona Ya lo hice.",
         img: "img/cambiar-el-hogar-3.jpg",
         alerta: false
       },
       {
         indicador: "Paso 4 de 4 (Cambiar el hogar)",
         titulo: 'Obtén tu confirmación "Link de acceso"',
-        desc: "Deja tu TV en esa pantalla, luego en esta web pulsa el botón ¡Listo!, coloca tu número y obtén tu link de acceso.",
+        desc: "Deja tu TV en esta pantalla, pulsa ¡Listo! mas abajo, coloca tu número y obtén tu link de acceso.",
         img: "img/cambiar-el-hogar-4.jpg",
         alerta: false
       }
@@ -461,21 +461,21 @@
       {
         indicador: "Paso 1 de 3",
         titulo: 'Pulsa "Ver temporalmente"',
-        desc: "En la ventana de tu dispositivo, selecciona la opción inferior resaltada.",
+        desc: "Realiza la acción y presiona Ya lo hice.",
         img: "img/ver-temporalmente-1.jpg",
         alerta: false
       },
       {
         indicador: "Paso 2 de 3",
         titulo: 'Selecciona "Enviar email"',
-        desc: "Selecciona esta opción para enviar el código a la cuenta asociada.",
+        desc: "Realiza la acción y presiona Ya lo hice.",
         img: "img/ver-temporalmente-2.jpg",
         alerta: false
       },
       {
         indicador: "Paso 3 de 3",
         titulo: 'Coloca el "Código de acceso"',
-        desc: "Deja tu dispositivo en esa pantalla, luego en esta web pulsa el botón ¡Listo!, coloca tu número y obtén tu código.",
+        desc: "Deja tu cel o pc en esta pantalla, pulsa ¡Listo! mas abajo, coloca tu número y obtén tu link de acceso.",
         img: "img/ver-temporalmente-3.jpg",
         alerta: false
       }
