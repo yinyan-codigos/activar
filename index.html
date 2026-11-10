@@ -512,7 +512,7 @@
       document.getElementById('boxAlertaTv').style.display = paso.alerta ? 'block' : 'none';
 
       var esUltimo = indicePaso === (pasosActuales.length - 1);
-      document.getElementById('btnPasoSiguiente').textContent = esUltimo ? "¡Listo! Obtener mi código / link" : "¡Ya lo hice! Continuar";
+      document.getElementById('btnPasoSiguiente').textContent = esUltimo ? "¡Listo! Obtener mi acceso" : "¡Ya lo hice! Continuar";
     }
 
     function avanzarPaso() {
@@ -543,7 +543,7 @@
           clearInterval(intervaloCooldown);
           intervaloCooldown = null;
           btn.disabled = false;
-          btn.textContent = "Obtener Código / Link";
+          btn.textContent = "Obtener Código / Hogar";
         }
       }, 1000);
     }
@@ -580,7 +580,7 @@
 
           if (data.exito) {
             btn.disabled = false;
-            btn.textContent = "Obtener Código / Link";
+            btn.textContent = "Obtener Código / Hogar";
             res.className = "resultado exito";
             var contenido = "<p style='color:#a5d6a7; font-size:16px; font-weight:bold;'>Perfil: " + (data.perfil || 'Asignado') + "</p>";
             
